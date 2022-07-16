@@ -9,6 +9,7 @@
 body {
   box-sizing: border-box;
   font-family: IRANSans, Verdana, Geneva, Tahoma, sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -41,7 +42,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 33.34%;
+  flex: 1;
   height: 100%;
   padding: 30px;
 }
@@ -80,19 +81,18 @@ form button {
   color: white;
 }
 
-@media (max-width: 700px) {
-  .name-social h1 {
-    font-size: 1.5rem;
+@media (max-width: 1200px) {
+  #main-image {
+    height: 25rem;
+    width: 100%;
   }
 
-  .part {
-    width: 33.34%;
-    height: 100%;
-    padding: 10px;
+  .card {
+    width: 50%;
   }
 
-  h1 {
-    font-size: 1.5rem;
+  .part h3 {
+    font-size: 1.3rem;
   }
 }
 
@@ -106,6 +106,10 @@ form button {
     font-size: 1.3rem;
   }
 
+  .card {
+    width: 50%;
+  }
+
   .description h3 {
     font-size: 1.3rem;
   }
@@ -115,13 +119,21 @@ form button {
   }
 }
 
-@media (max-width: 1200px) {
-  #main-image {
-    height: 25rem;
-    width: 100%;
+@media (max-width: 700px) {
+  .name-social h1 {
+    font-size: 1.5rem;
   }
 
-  .part h3 {
-    font-size: 1.3rem;
+  .part {
+    height: 100%;
+    padding: 10px;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
   }
 }
