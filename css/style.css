@@ -8,7 +8,7 @@
 
 body {
   box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: IRANSans, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 a {
@@ -22,7 +22,7 @@ a:hover {
 
 #main-image {
   width: 100%;
-  height: 22.55rem;
+  height: 60vh;
 }
 
 .icons:not(:last-child) {
@@ -34,11 +34,20 @@ a:hover {
 }
 .parts {
   width: 100%;
+  flex: 1;
 }
 .part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 33.34%;
   height: 100%;
   padding: 30px;
+}
+
+.card {
+  width: 33.33%;
 }
 
 .view-site {
