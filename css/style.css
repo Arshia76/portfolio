@@ -37,6 +37,15 @@ a:hover {
   width: 100%;
   flex: 1;
 }
+
+.parts i {
+  font-size: 30px !important;
+}
+
+.parts a {
+  margin-bottom: 5px;
+}
+
 .part {
   display: flex;
   flex-direction: column;
@@ -45,6 +54,12 @@ a:hover {
   flex: 1;
   height: 100%;
   padding: 30px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.part:hover {
+  opacity: 0.9;
 }
 
 .card {
