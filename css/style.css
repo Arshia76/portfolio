@@ -38,6 +38,16 @@ a:hover {
   flex: 1;
 }
 
+.view-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view-block :first-child {
+  margin-right: 10px;
+}
+
 .parts i {
   font-size: 30px !important;
 }
@@ -150,5 +160,16 @@ form button {
 
   h1 {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .view-block {
+    flex-direction: column;
+  }
+
+  .view-block :first-child {
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 }
